@@ -1,0 +1,56 @@
+.header {
+  z-index: 1;
+
+  max-height: 80px;
+  padding: 0 104px;
+
+  border-bottom: 1px solid rgb(255 255 255 / 20%);
+}
+
+.header__title {
+  display: block;
+
+  transition: opacity 0.2s ease-in-out;
+  text-decoration: none;
+
+  color: white;
+
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 80px;
+}
+
+.header__navigation {
+  gap: 60px;
+}
+
+.header__links {
+  gap: 60px;
+}
+
+.header__link {
+  color: var(--button-disabled);
+
+  line-height: 80px;
+}
+
+.header__link:hover {
+  opacity: .7;
+}
+
+@media screen and (width <= 660px) {
+  .header {
+    max-height: 56px;
+    padding: 16px;
+  }
+
+  .header__button-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .header__button-img:hover {
+    opacity: .7;
+  }
+}

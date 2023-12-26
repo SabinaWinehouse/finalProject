@@ -1,0 +1,32 @@
+body {
+  overflow: hidden;
+
+  min-height: 100vh;
+  margin: 0;
+
+  background-color: #333;
+}
+
+.circle-preloader {
+  position: absolute;
+  inset: 0;
+
+  display: block;
+
+  width: 50px;
+  height: 50px;
+  margin: auto;
+	
+  animation: spin .75s infinite linear;
+
+  border: 4px solid #444;
+  border-bottom-color: #888;
+	
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

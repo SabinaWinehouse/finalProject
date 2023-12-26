@@ -1,0 +1,83 @@
+.button {
+  height: 64px;
+
+  transition: background-color 0.4s ease;
+
+  border-radius: 100px;
+
+  font-weight: 500;
+}
+
+.button:hover() {
+  opacity: .9;
+}
+
+.button_type_primary {
+  width: 100%;
+
+  color: var(--white);
+  background-color: var(--primary-button);
+  box-shadow: 0 5px 15px 0 rgb(14 26 57 / 20%);
+}
+
+.button_type_primary-search {
+  width: 168px;
+  margin-left: -168px;
+
+  color: var(--white);
+  background-color: var(--primary-button);
+}
+
+.button_type_primary:hover, .button_type_primary-search:hover {
+  background-color: var(--primary-button-hover);
+}
+
+.button_type_primary:active, .button_type_primary-search:active {
+  background-color: var(--primary-button-active);
+}
+
+.button_type_primary:disabled {
+  color: var(--button-disabled);
+  background-color: var(--secondary-background);
+}
+
+.button_type_secondary {
+  width: 288px;
+
+  color: black;
+  border-radius: 80px;
+  background-color: var(--white);
+}
+
+.button_type_secondary:hover {
+  background-color: var(--secondary-button-hover);
+}
+
+.button_type_transparent {
+  width: 100%;
+  min-width: 176px;
+  height: 48px;
+
+  color: var(--white);
+  border: 1px solid var(--white);
+  background-color: transparent;
+}
+
+.button_type_transparent:hover {
+  color: black;
+  background-color: var(--white);
+}
+
+@media screen and (width <= 660px) {
+  .button {
+    height: 56px;
+  }
+  
+  .button_type_primary-search {
+    display: block;
+
+    width: 100%;
+    margin-top: 16px;
+    margin-left: 0;
+  }
+}

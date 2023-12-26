@@ -1,0 +1,31 @@
+@import url("./vendor/normalize.css");
+@import url("./vendor/fonts/fonts.css");
+
+*, h1 {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none; 
+}
+
+a {
+  text-decoration: none;
+
+  color: var(--black);
+}
+
+:root {
+  --black: #1A1B22;
+  --white: #FFF;
+  --primary-button: #2F71E5;
+  --primary-button-hover: #347EFF;
+  --primary-button-active: #2A65CC;
+  --button-disabled: #B6BCBF;
+  --primary-background: #E6E8EB;
+  --secondary-background: #F5F6F7;
+  --secondary-button-hover: #E8E8E8;
+  --border-gray: #D1D2D6;
+}

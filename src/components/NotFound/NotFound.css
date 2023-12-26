@@ -1,0 +1,23 @@
+.not-found {
+  background-color: var(--secondary-background);
+}
+
+.not-found__overlay {
+  width: 25%;
+  max-width: 356px;
+  margin: 80px auto;
+
+  text-align: center;
+}
+
+@media only screen and (width <= 660px) {
+  .not-found__overlay {
+    width: 50%;
+  }
+}
+
+@media only screen and (width <= 450px) {
+  .not-found__overlay {
+    width: 90%;
+  }
+}
