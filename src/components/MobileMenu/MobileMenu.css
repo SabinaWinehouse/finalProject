@@ -1,0 +1,16 @@
+.mobile-menu {
+  top: 56px;
+  left: 0;
+
+  overflow: hidden;
+
+  padding: 24px 16px;
+
+  background-color: var(--black);
+}
+
+.mobile-menu__link {
+  height: 56px;
+
+  color: var(--white);
+}

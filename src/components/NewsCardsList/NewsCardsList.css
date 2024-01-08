@@ -1,0 +1,33 @@
+.cards-list {
+  padding: 24px 104px 64px;
+
+  background-color: var(--secondary-background);
+  gap: 64px;
+}
+
+.cards-list__overlay {
+  max-width: 1232px;
+  margin: auto;
+}
+
+.cards-list__title {
+  margin: 64px 0;
+}
+
+.cards-list__list {
+  gap: 16px;
+}
+
+@media screen and (width <= 660px) {
+  .cards-list {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .cards-list__title {
+    align-self: flex-start;
+
+    margin-top: 8px;
+    margin-bottom: 58px;
+  }
+}
